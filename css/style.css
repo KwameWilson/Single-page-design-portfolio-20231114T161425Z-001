@@ -7,6 +7,7 @@
 }
 
 body {
+    color: #fff;
     background: #FFF7F0;
     font-family: "Plus Jakarta Sans";
     font-size: 18px;
@@ -50,6 +51,7 @@ header {
 }
 
 header h1 {
+    color: #030303;
     font-size: 56px;
     font-style: normal;
     font-weight: 700;
@@ -69,27 +71,117 @@ header h4 {
 
 section.grid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin-bottom: 136px;
 }
-
 
 .graphic-design {
     background: #755CDE;
     color: #fff;
     padding: 24px;
     border-radius: 8px;
+    height: 388px;
 }
 
 .graphic-design span {
     display: inline-block;
-    margin-bottom: 94px;
-    margin-left: 202px;
+    margin-bottom: 102px;
+    margin-left: 178px;
 }
 
 .graphic-design h3 {
     margin-right: 120px;
+}
+
+.nested__grid-middle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.nested__grid-middle .ui {
+    background: #F6A560;
+    padding: 24px;
+    border-radius: 8px;
+
+}
+
+.ui,
+.apps,
+.ill,
+.photo,
+.mog {
+    height: 182px;
+}
+
+.ui span,
+.app span {
+    margin-left: 52px;
+    margin-bottom: 40px;
+}
+
+.ui h3,
+.app h3 {
+    margin-right: 34px;
+}
+
+.nested__grid-middle .app {
+    background: #F39E9E;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.photo {
+    background: #61C4B7;
+    padding: 24px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.photo span {
+    margin-left: 146px;
+    margin-bottom: 42px;
+}
+
+.photo h3 {
+    margin-right: 144px;
+}
+
+.nested__grid-right {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.ill {
+    background: #EB7565;
+    padding: 24px;
+    border-radius: 8px;
+    grid-column: span 2;
+    text-align: left;
+    height: 182px;
+}
+
+.ill span {
+    margin-left: 146px;
+    margin-bottom: 24px;
+}
+
+.ill h3 {
+    margin-right: 144px;
+}
+
+.mog {
+    border-radius: 8px;
+    background: #552049;
+    padding: 24px;
+    text-align: left;
+}
+
+.mog span {
+    margin-left: 178px;
+    margin-bottom: 24px;
 }
 
 .bio-grid {
@@ -161,7 +253,7 @@ section.work {
 .cta {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 182px;
+    gap: 114px;
     padding: 81px 95px 81px 65px;
     background: #030303;
     color: #fff;
@@ -206,4 +298,9 @@ section.cta h4 {
     font-style: normal;
     font-weight: 500;
     line-height: 28px;
+}
+
+.logo__btn-bottom {
+    width: 1111px;
+    margin: 0px auto 74px;
 }

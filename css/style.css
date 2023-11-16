@@ -235,6 +235,7 @@ section.work {
 }
 
 .work h2 {
+    color: #030303;
     margin-bottom: 56px;
 }
 
@@ -243,12 +244,20 @@ section.work {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     text-align: center;
-    margin-bottom: 56px;
+    width: 1440px;
+    margin: 0 auto 56px;
 }
 
-.work-grid span img {
+.work-grid div {
+    /* border: 2px solid red; */
+    height: 360px;
+    text-align: center;
+}
+
+.work-grid div img {
     border-radius: 10px;
 }
+
 
 .cta {
     display: grid;
